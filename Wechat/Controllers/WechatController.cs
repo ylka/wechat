@@ -40,11 +40,11 @@ namespace Wechat.Controllers
         }
 
         [HttpPost]
-        public string Post(MessageModel messageModel)
+        public string Post([FromForm]MessageModel messageModel)
         {
             _logger.LogInformation(JsonConvert.SerializeObject(messageModel));
 
-            return "";
+            return "hello";
         }
 
         private string HmacSha1Sign(string str)
