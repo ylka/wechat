@@ -28,7 +28,7 @@ namespace Wechat
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
             .ConfigureHostConfiguration(configBuidler =>
-                configBuidler.AddJsonFile("appsettings.logs.json", true, true)
+                configBuidler.AddJsonFile("appsettings.Logs.json", true, true)
             )
             .ConfigureWebHostDefaults(webBuilder =>
             {
