@@ -40,7 +40,7 @@ namespace Wechat.Controllers
         }
 
         [HttpPost]
-        public string Post([FromForm]MessageModel messageModel)
+        public string Post(ApiModel messageModel)
         {
             _logger.LogInformation(JsonConvert.SerializeObject(messageModel));
 
